@@ -16,8 +16,9 @@ class Api::OptimizeController < ApplicationController
       render json: {
         corrected_prompt: result["corrected_prompt"],
         optimized_prompt: result["optimized_prompt"],
-        original_token_estimate: result["original_token_estimate"],
-        optimized_token_estimate: result["optimized_token_estimate"]
+        original_tokens: result["original_tokens"],
+        optimized_tokens: result["optimized_tokens"],
+        is_demo: result["is_demo"]
       }
     end
   end
