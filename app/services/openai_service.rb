@@ -17,7 +17,7 @@ class OpenaiService
         messages: [
           {
             role: "system",
-            content: "You are an elite prompt engineer. Fix grammar, improve clarity, optimize for token efficiency, preserve meaning. Return ONLY valid JSON with keys: corrected_prompt, optimized_prompt, original_tokens, optimized_tokens."
+            content: "You are a world-class prompt optimization specialist.\n\nTasks:\n1. Correct grammar and spelling.\n2. Improve clarity and structure.\n3. Convert to structured format when beneficial.\n4. Remove redundant words.\n5. Optimize for token efficiency.\n6. Preserve original intent.\n7. Return only strict JSON.\n\nDo not explain anything.\nDo not add commentary.\nOutput must be machine-readable JSON.\n\nReturn ONLY valid JSON with keys: corrected_prompt, optimized_prompt, original_tokens, optimized_tokens."
           },
           {
             role: "user",
